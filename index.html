@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+	<title>蒙凡的todolist</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="hh">
+    <section>
+        <form action="javascript:postaction()" id="form">
+           <label for="titile">ToDoList</label>
+           <input type="text" id="title" name="title" placeholder="添加事件" required="required" autocomplete="off"/>
+        </form>
+    </section>
+</div>
+<section> 
+    
+    <h2 onclick="save()">未完成：<span id="jishu" class="star"></span></h2>
+	<ol id="one">
+	</ol>
+	<h2>已完成：<span id="jishu1" class="star"></span></h2>
+	<ul id="two">
+	</ul>
+</section>
+<div class="ft">
+Copyright &copy; 2014 todolist.cn <a href="javascript:clear();">clear</a>
+</div>
+</body>
+</html>
